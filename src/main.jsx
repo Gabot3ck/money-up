@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { MoneyUp } from './MoneyUp'
-import './styles.css'
+import { MoneyUp } from './MoneyUp';
+import './styles.css';
 
 
 
@@ -12,4 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <MoneyUp />
     </BrowserRouter>
   </React.StrictMode>,
+  
 )
+
+
