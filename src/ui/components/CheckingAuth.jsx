@@ -1,6 +1,3 @@
-import { ButtonPrimary, ButtonSecondary } from "./buttons";
-import { FaGoogle } from "react-icons/fa";
-
 
 export const CheckingAuth = () => {
 
@@ -18,8 +15,6 @@ export const CheckingAuth = () => {
         <span className="mt-3 text-primary-500 animate-pulse" >
           Cargando
         </span>
-        <ButtonPrimary title="Registrar" />
-        <ButtonSecondary icon={<FaGoogle /> } title='Registrar con Google' />
     </div>
   )
 }
