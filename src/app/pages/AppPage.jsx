@@ -1,7 +1,10 @@
+import { AppLayaout } from "../layaout/AppLayaout"
 
 
 export const AppPage = () => {
   return (
-    <div>AppPage</div>
+    <AppLayaout >
+      
+    </AppLayaout>
   )
 }
