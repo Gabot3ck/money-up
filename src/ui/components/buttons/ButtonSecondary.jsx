@@ -5,7 +5,7 @@ export const ButtonSecondary = ( { icon, title } ) => {
     <button 
       className="w-full sm:max-w-[320px] h-[40px] 
                 flex items-center justify-center 
-                text-primary-500 text-xs sm:text-base
+                text-primary-500 text-sm sm:text-base
                 border  border-primary-500 rounded-full
                 bg-transparent
                 hover:text-primary-400  hover:border-primary-400

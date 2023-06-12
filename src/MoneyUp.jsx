@@ -1,11 +1,11 @@
-import { CheckingAuth } from "./ui/components/CheckingAuth"
+import { AuthHomePage } from "./auth/pages"
+
 
 
 export const MoneyUp = () => {
   
 
   return (<>
-    <CheckingAuth />
-    
+    <AuthHomePage />
   </>)
 }
