@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ButtonPrimary } from "../../ui/components/buttons/ButtonPrimary";
 import Logo from '../../assets/img/Logo Mobile vertical.png';
 
@@ -24,9 +25,12 @@ export const AuthHomePage = () => {
 
       <ButtonPrimary />
 
-      <p className="text-sm text-center font-semibold text-primary-500 mt-3" >
+      <Link
+        to='/login'
+        className="text-sm text-center font-semibold text-primary-500 mt-3" 
+      >
         Ya estoy registrado
-      </p>
+      </Link>
 
     </div>
   )
