@@ -18,6 +18,7 @@ export default {
         },
         'light': {
           500: '#f5f5f5',
+          600: '#6b7280',
         },
         'alert': {
           400:'#dc2626',
