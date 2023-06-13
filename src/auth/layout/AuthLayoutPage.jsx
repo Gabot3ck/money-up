@@ -1,7 +1,20 @@
+import { Navbar } from "../../app/components/Navbar";
 
 
-export const AuthLayoutPage = () => {
+
+export const AuthLayoutPage = ( { children } ) => {
+
+
   return (
-    <div>AuthLayoutPage</div>
+    <div className="w-screen h-screen
+                    flex flex-col items-center justify-start
+                    bg-light-500" 
+    >
+
+      <Navbar showBurger={ false } />
+
+      { children }      
+
+    </div>
   )
 }

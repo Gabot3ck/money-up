@@ -1,15 +1,12 @@
-// import { AuthHomePage } from "./auth/pages"
-
-import { AppLayaout } from "./app/layaout/AppLayaout"
+import { AppRouter } from "./router/AppRouter"
 
 
 
 
 export const MoneyUp = () => {
-  
+
 
   return (<>
-    {/* <AuthHomePage /> */}
-    <AppLayaout />
+    <AppRouter />
   </>)
 }
