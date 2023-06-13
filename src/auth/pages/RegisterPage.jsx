@@ -1,13 +1,13 @@
-import { FaFacebook, FaGoogle } from "react-icons/fa"
-import { OrOfButtons } from "../../ui/components/OrOfButtons"
-import { ButtonSecondary } from "../../ui/components/buttons"
-import { AuthLayoutPage } from "../layout/AuthLayoutPage"
-import { FormRegister } from "../../app/components/forms/FormRegister"
+import { FaFacebook, FaGoogle } from "react-icons/fa";
+import { OrOfButtons } from "../../ui/components/OrOfButtons";
+import { ButtonSecondary } from "../../ui/components/buttons";
+import { AuthLayoutPage } from "../layout/AuthLayoutPage";
+import { FormRegister } from "../../app/components/forms/FormRegister";
 
 
 export const RegisterPage = () => {
-  
-  
+
+
   return (
     <AuthLayoutPage >
       <div className="w-full px-4 mt-4 mb-8" >
@@ -18,27 +18,26 @@ export const RegisterPage = () => {
 
       <FormRegister />
 
-
       <div className="w-full px-4 mt-8
                       flex flex-col gap-8 items-center justify-center " 
       >
-      <OrOfButtons />
+        <OrOfButtons />
 
-      <ButtonSecondary
-        icon={ <FaGoogle /> }
-        title={'Registrarme con Google'}
-      />
+        <ButtonSecondary
+          icon={ <FaGoogle /> }
+          title={'Registrarme con Google'}
+        />
 
-      <ButtonSecondary
-        icon={ <FaFacebook /> }
-        title={'Registrarme con Facebook'}
-      />
+        <ButtonSecondary
+          icon={ <FaFacebook /> }
+          title={'Registrarme con Facebook'}
+        />
 
-      <div className="w-full flex items-center justify-center gap-3 mt-3">
-        <p className="text-sm text-primary-500 font-medium" >Ya estoy registrado</p>
+        <div className="w-full flex items-center justify-center mt-3">
+          <p className="text-sm text-primary-500 font-medium" >Ya estoy registrado</p>
+        </div>
+
       </div>
-
-    </div>
 
     </AuthLayoutPage>
   )
