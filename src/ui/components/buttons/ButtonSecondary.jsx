@@ -1,8 +1,10 @@
 
 
-export const ButtonSecondary = ( { icon, title } ) => {
+export const ButtonSecondary = ( { icon, title, onClick, disabled } ) => {
   return (
-    <button 
+    <button
+      disabled={ disabled }
+      onClick={ onClick }
       className="w-full sm:max-w-[320px] h-[40px] 
                 flex items-center justify-center 
                 text-primary-500 text-sm sm:text-base
