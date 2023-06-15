@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import { MoneyUp } from './MoneyUp';
+import { store } from './store'
 import './styles.css';
+
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <MoneyUp />
-    </BrowserRouter>
+    <Provider store={ store }>
+      <BrowserRouter>
+        <MoneyUp />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   
 )
