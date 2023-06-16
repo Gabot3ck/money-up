@@ -1,22 +1,26 @@
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { FaFacebook, FaGoogle } from "react-icons/fa"
-import { checkingAuthentication, startGoogleSignIn } from "../../../store/auth"
+import { startGoogleSignIn, startLoginWithEmailPassword } from "../../../store/auth"
 import { useForm } from "../../../hooks/useForm"
 import { OrOfButtons } from "../../../ui/components/OrOfButtons"
 import { ButtonPrimary, ButtonSecondary } from "../../../ui/components/buttons"
+import { MessageErrorFirebase } from "../";
+
+
 
 
 
 export const FormLogin = () => {
 
-  const { status } = useSelector( state => state.auth );
+  const { status, errorMessage } = useSelector( state => state.auth );
 
 
   const dispatch = useDispatch();
   const { email, password, onInputChange } = useForm({
-    email: 'fernando@google.com',
-    password: '123456',
+    email: '',
+    password: '',
   });
 
   const isAuthenticating = useMemo( () => status === 'checking', [status]);
@@ -25,8 +29,7 @@ export const FormLogin = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    console.log({ email, password })
-    dispatch( checkingAuthentication() );
+    dispatch( startLoginWithEmailPassword( { email, password } ) );
   }
 
   const onGoogleSignIn = () => {
@@ -34,7 +37,6 @@ export const FormLogin = () => {
   }
 
   const onFacebookSignIn = () => {
-    console.log('onFacebookSignIn');
   }
 
 
@@ -66,6 +68,9 @@ export const FormLogin = () => {
         value={ password }
         onChange={ onInputChange }
       />
+
+      <MessageErrorFirebase errorMessage={ errorMessage } />
+
       <ButtonPrimary title="Ingresar" type='submit' />
     </form>
 
@@ -90,7 +95,9 @@ export const FormLogin = () => {
 
       <div className="w-full flex items-center justify-center gap-3 mt-6">
         <p className="text-sm" >¿No está registrado?</p>
-        <p className="text-sm text-primary-500 font-medium" >Regístrese aquí</p>
+        <Link to='/auth/register' className="text-sm text-primary-500 font-medium" >
+          Regístrese aquí
+        </Link>
       </div>
 
     </div>
