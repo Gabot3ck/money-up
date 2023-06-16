@@ -1,8 +1,20 @@
+import { useDispatch, useSelector } from "react-redux";
 import { FaUserCircle, FaCog, FaCalendarAlt } from "react-icons/fa";
+import { RiLogoutCircleLine } from "react-icons/ri";
+import { startLogout } from "../../store/auth";
 import { ItemMenuMobile } from "./ItemMenuMobile";
 
 
+
 export const Menu = ( ) => {
+
+  const { displayName } = useSelector( state => state.auth )
+
+  const dispatch = useDispatch();
+
+  const onLogout = () => {
+    dispatch( startLogout() );
+  }
 
 
   return (
@@ -16,7 +28,7 @@ export const Menu = ( ) => {
                       flex flex-col items-start" 
       >
         <FaUserCircle size={ 80 }/>
-        <b className="text-lg text-primary-500" >Nombre de Usuario</b>
+        <b className="text-lg text-primary-500" >{ displayName }</b>
         <p className='text-sm  text-light-600' >
           Cuenta personal
         </p>
@@ -35,6 +47,11 @@ export const Menu = ( ) => {
         <ItemMenuMobile 
           icon={ <FaCalendarAlt /> }
           text='Calendario'
+        />
+        <ItemMenuMobile 
+          icon={ <RiLogoutCircleLine /> }
+          text='Cerrar sesión'
+          onClick={ onLogout }
         />
       </ul>
     </div>

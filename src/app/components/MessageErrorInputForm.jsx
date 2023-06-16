@@ -1,9 +1,9 @@
 
 
-export const MessageErrorInputForm = ( { messageError }) => {
+export const MessageErrorInputForm = ( { errorMessage }) => {
   return (
     <span className=' text-alert-500 text-sm font-medium'>
-          { messageError !== "" ? messageError : "" }
+          { errorMessage !== "" ? errorMessage : "" }
         </span>
   )
 }
