@@ -3,6 +3,7 @@ import { AuthHomePage, LoginPage, RegisterPage } from "../pages";
 
 
 export const AuthRoutes = () => {
+
   return (
     <Routes>
       <Route path="home" element={ <AuthHomePage /> } />

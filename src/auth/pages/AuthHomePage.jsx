@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ButtonPrimary } from "../../ui/components/buttons/ButtonPrimary";
 import Logo from '../../assets/img/Logo Mobile vertical.png';
 
@@ -23,10 +23,21 @@ export const AuthHomePage = () => {
         Ya has dado el primer paso, ¡Enhorabuena! <br /> Déjanos guiárte en este proceso
       </p>
 
-      <ButtonPrimary />
+      <Link 
+        className="w-full sm:max-w-[160px] h-[40px]
+                text-sm sm:text-base text-dark-500 font-semibold
+                bg-primary-500  rounded-full 
+                hover:bg-primary-400 
+                transition-colors duration-300 ease-out"
+        to="/auth/register"
+      >
+      
+        <ButtonPrimary />
+      </Link>
+      
 
       <Link
-        to='/login'
+        to='/auth/login'
         className="text-sm text-center font-semibold text-primary-500 mt-3" 
       >
         Ya estoy registrado

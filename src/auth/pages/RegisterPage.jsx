@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { OrOfButtons } from "../../ui/components/OrOfButtons";
 import { ButtonSecondary } from "../../ui/components/buttons";
 import { AuthLayoutPage } from "../layout/AuthLayoutPage";
 import { FormRegister } from "../../app/components/forms/FormRegister";
+
 
 
 export const RegisterPage = () => {
@@ -34,7 +36,9 @@ export const RegisterPage = () => {
         />
 
         <div className="w-full flex items-center justify-center mt-3">
-          <p className="text-sm text-primary-500 font-medium" >Ya estoy registrado</p>
+          <Link  to='/auth/login' className="text-sm text-primary-500 font-medium" >
+            Ya estoy registrado
+          </Link>
         </div>
 
       </div>
