@@ -1,4 +1,5 @@
-import { Navbar } from "../../app/components/Navbar";
+import { Navbar } from "../../app/components/NavBar";
+
 
 
 
