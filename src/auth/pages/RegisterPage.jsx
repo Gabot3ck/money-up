@@ -12,15 +12,17 @@ export const RegisterPage = () => {
 
   return (
     <AuthLayoutPage >
-      <div className="w-full px-4 mt-4 mb-8" >
+      <div className="px-4 mt-4 mb-8  
+                      w-full md:w-3/4 max-w-[500px]" 
+      >
         <h3 className="w-full font-medium text-xl text-start mb-2" >Registrarse</h3>
 
-        <p className="text-base" >Te ayudamos a lograr tus metas de la manera <br /> más facil y sencilla.</p>
+        <p className="w-[320px] md:w-full text-base" >Te ayudamos a lograr tus metas de la manera más facil y sencilla.</p>
       </div>
 
       <FormRegister />
 
-      <div className="w-full px-4 mt-8
+      <div className="w-full md:w-3/4 max-w-[500px] px-4 mt-8 
                       flex flex-col gap-8 items-center justify-center " 
       >
         <OrOfButtons />
