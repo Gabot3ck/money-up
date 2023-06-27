@@ -18,7 +18,7 @@ export const Menu = ( ) => {
 
 
   return (
-    <div className="w-[85%] h-full p-6
+    <div className="w-[85%] md:max-w-5xl h-full p-6
                   border-r-2 border-gray-300
                   flex flex-col items-start
                   absolute top-0 left-0 z-30
