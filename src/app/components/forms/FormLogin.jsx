@@ -74,7 +74,7 @@ export const FormLogin = () => {
       <ButtonPrimary title="Ingresar" type='submit' />
     </form>
 
-    <div className="w-full md:w-3/4 max-w-[500px] px-4 my-8
+    <div className="w-full md:w-3/4 max-w-[500px] px-4 mt-8
                     flex flex-col gap-8 items-center justify-center " 
     >
       <OrOfButtons />
@@ -93,7 +93,7 @@ export const FormLogin = () => {
         disabled={ isAuthenticating }
       />
 
-      <div className="w-full flex items-center justify-center gap-3 mt-6">
+      <div className="w-full flex items-center justify-center gap-3">
         <p className="text-sm" >¿No está registrado?</p>
         <Link to='/register' className="text-sm text-primary-500 font-medium" >
           Regístrese aquí

@@ -8,7 +8,7 @@ export const LoginPage = () => {
   return (
     <AuthLayoutPage >
 
-      <div className="px-4 mt-4 mb-12
+      <div className="px-4 mt-4 mb-8
                       w-full md:w-3/4 max-w-[500px]" 
       >
         <h3 className="w-full font-medium text-xl text-start mb-2" >Iniciar sesión</h3>
