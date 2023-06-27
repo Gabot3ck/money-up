@@ -60,7 +60,7 @@ export const FormRegister = () => {
   return (
     <form
       onSubmit={ onSubmit }
-      className="w-full 
+      className="w-full md:w-3/4 max-w-[500px]
                 flex px-4 flex-col justify-center items-center gap-8" 
     >
 
