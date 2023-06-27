@@ -36,7 +36,7 @@ export const RegisterPage = () => {
         />
 
         <div className="w-full flex items-center justify-center mt-3">
-          <Link  to='/auth/login' className="text-sm text-primary-500 font-medium" >
+          <Link  to='/login' className="text-sm text-primary-500 font-medium" >
             Ya estoy registrado
           </Link>
         </div>

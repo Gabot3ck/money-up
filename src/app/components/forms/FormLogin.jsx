@@ -95,7 +95,7 @@ export const FormLogin = () => {
 
       <div className="w-full flex items-center justify-center gap-3 mt-6">
         <p className="text-sm" >¿No está registrado?</p>
-        <Link to='/auth/register' className="text-sm text-primary-500 font-medium" >
+        <Link to='/register' className="text-sm text-primary-500 font-medium" >
           Regístrese aquí
         </Link>
       </div>

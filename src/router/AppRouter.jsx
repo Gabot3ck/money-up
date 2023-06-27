@@ -2,7 +2,7 @@ import {  Navigate, Route, Routes } from "react-router-dom";
 import { useCheckAuth } from "../hooks/useCheckAuth";
 import { AppRoutes } from "../app/routes/AppRoutes";
 import { CheckingAuth } from "../ui";
-import { AuthHomePage } from "../auth/pages";
+import { AuthHomePage, LoginPage, RegisterPage } from "../auth/pages";
 
 
 export const AppRouter = () => {
@@ -24,8 +24,13 @@ export const AppRouter = () => {
       {
         (status === 'authenticated')
         ? <Route path='/*' element={ <AppRoutes /> } />
-        : <Route path="/" element={ <AuthHomePage /> } />
+        : <>
+            <Route path="/" element={ <AuthHomePage /> } />
+            <Route path="/login" element={ <LoginPage /> } />
+            <Route path="/register" element={ <RegisterPage /> } />
+          </>
       }
+      
 
       <Route path="/*" element={ <Navigate to='/' /> } />
       

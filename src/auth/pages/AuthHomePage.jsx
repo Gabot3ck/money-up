@@ -29,7 +29,7 @@ export const AuthHomePage = () => {
                 bg-primary-500  rounded-full 
                 hover:bg-primary-400 
                 transition-colors duration-300 ease-out"
-        to="/auth/register"
+        to="/register"
       >
       
         <ButtonPrimary />
@@ -37,7 +37,7 @@ export const AuthHomePage = () => {
       
 
       <Link
-        to='/auth/login'
+        to='/login'
         className="text-sm text-center font-semibold text-primary-500 mt-3" 
       >
         Ya estoy registrado
