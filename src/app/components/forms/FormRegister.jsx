@@ -46,7 +46,6 @@ export const FormRegister = () => {
       passConfirmValited ) {
 
         dispatch( startCreatingUserWithEmailPassword(formState) );
-        console.log('Enviando form...');
 
     } else {
       !nameValited && setErrorName('Debe ingresar un nombre');

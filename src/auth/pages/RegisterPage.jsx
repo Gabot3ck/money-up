@@ -37,7 +37,7 @@ export const RegisterPage = () => {
           title={'Registrarme con Facebook'}
         />
 
-        <div className="w-full flex items-center justify-center mt-3">
+        <div className="w-full flex items-center justify-center mb-5">
           <Link  to='/login' className="text-sm text-primary-500 font-medium" >
             Ya estoy registrado
           </Link>

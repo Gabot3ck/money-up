@@ -41,8 +41,8 @@ export const FormLogin = () => {
 
 
   return (<>
-        <form 
-      className="w-full 
+    <form 
+      className="w-full md:w-3/4 max-w-[500px]
                 flex px-4 flex-col justify-center items-center gap-8"
       onSubmit={ onSubmit }
     >
@@ -74,7 +74,7 @@ export const FormLogin = () => {
       <ButtonPrimary title="Ingresar" type='submit' />
     </form>
 
-    <div className="w-full px-4 my-8
+    <div className="w-full md:w-3/4 max-w-[500px] px-4 my-8
                     flex flex-col gap-8 items-center justify-center " 
     >
       <OrOfButtons />
