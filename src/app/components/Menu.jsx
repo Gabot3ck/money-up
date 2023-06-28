@@ -29,7 +29,7 @@ export const Menu = ( ) => {
       >
         {/* <FaUserCircle size={ 80 }/> */}
         <img
-        className="w-20 h-20 rounded-full" 
+          className="w-20 h-20 rounded-full" 
           src={ photoURL } 
           alt="Imagen de usuario" 
         />

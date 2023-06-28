@@ -1,13 +1,26 @@
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { OrOfButtons } from "../../ui/components/OrOfButtons";
 import { ButtonSecondary } from "../../ui/components/buttons";
 import { AuthLayoutPage } from "../layout/AuthLayoutPage";
 import { FormRegister } from "../../app/components/forms/FormRegister";
+import { startGoogleSignIn } from "../../store/auth";
+import { useMemo } from "react";
 
 
 
 export const RegisterPage = () => {
+
+  const { status } = useSelector( state => state.auth );
+
+  const dispatch = useDispatch();
+
+  const isAuthenticating = useMemo( () => status === 'checking', [status]);
+
+  const onGoogleSignIn = () => {
+    dispatch( startGoogleSignIn() );
+  }
 
 
   return (
@@ -30,6 +43,8 @@ export const RegisterPage = () => {
         <ButtonSecondary
           icon={ <FaGoogle /> }
           title={'Ingresar con Google'}
+          onClick= { onGoogleSignIn }
+          disabled={ isAuthenticating }
         />
 
         <ButtonSecondary
