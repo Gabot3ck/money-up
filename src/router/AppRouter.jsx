@@ -1,6 +1,5 @@
 import {  Navigate, Route, Routes } from "react-router-dom";
 import { useCheckAuth } from "../hooks/useCheckAuth";
-import { AppRoutes } from "../app/routes/AppRoutes";
 import { CheckingAuth } from "../ui";
 import { AuthHomePage, LoginPage, RegisterPage } from "../auth/pages";
 import { AppPage } from "../app/pages/AppPage";

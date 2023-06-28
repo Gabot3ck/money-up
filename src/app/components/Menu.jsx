@@ -8,7 +8,7 @@ import { ItemMenuMobile } from "./ItemMenuMobile";
 
 export const Menu = ( ) => {
 
-  const { displayName } = useSelector( state => state.auth )
+  const { displayName, photoURL } = useSelector( state => state.auth )
 
   const dispatch = useDispatch();
 
@@ -27,7 +27,12 @@ export const Menu = ( ) => {
       <div className="w-full 
                       flex flex-col items-start" 
       >
-        <FaUserCircle size={ 80 }/>
+        {/* <FaUserCircle size={ 80 }/> */}
+        <img
+        className="w-20 h-20 rounded-full" 
+          src={ photoURL } 
+          alt="Imagen de usuario" 
+        />
         <b className="text-lg text-primary-500" >{ displayName }</b>
         <p className='text-sm  text-light-600' >
           Cuenta personal

@@ -29,12 +29,12 @@ export const RegisterPage = () => {
 
         <ButtonSecondary
           icon={ <FaGoogle /> }
-          title={'Registrarme con Google'}
+          title={'Ingresar con Google'}
         />
 
         <ButtonSecondary
           icon={ <FaFacebook /> }
-          title={'Registrarme con Facebook'}
+          title={'Ingresar con Facebook'}
         />
 
         <div className="w-full flex items-center justify-center mb-5">
