@@ -36,7 +36,7 @@ export const FooterMain = () => {
           text="Dashboard"
         />
 
-        <div className="absolute bottom-7
+        <div className="absolute bottom-[28px]
                         w-10 h-10
                         flex justify-center items-center
                         text-primary-500 
