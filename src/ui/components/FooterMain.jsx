@@ -8,7 +8,7 @@ export const FooterMain = () => {
 
   return (
     <div 
-      className="w-full h-12
+      className="w-full h-12 relative
                   bg-primary-500" 
     >
       <div
@@ -36,7 +36,7 @@ export const FooterMain = () => {
           text="Dashboard"
         />
 
-        <div className="absolute bottom-0
+        <div className="absolute bottom-[28px]
                         w-10 h-10
                         flex justify-center items-center
                         text-primary-500 
